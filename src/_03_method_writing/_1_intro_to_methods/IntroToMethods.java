@@ -43,23 +43,23 @@ public class IntroToMethods {
 		method5("Method", 5);
 	}
 	
-	public static void method1() {
+	public static void method1() {  //Return type: void  Name: method1  Parameters: none
 		System.out.println("Method1");
 	}
 
-	public static String method2() {
+	public static String method2() {  //Return type: String  Name: method2  Parameters: none
 		return "Method2";
 	}
 
-	public static void method3(String message) {
+	public static void method3(String message) {  //Return type: void  Name: method3  Parameters: String message
 		System.out.println("Method3");
 	}
 
-	public static String method4(String message) {
+	public static String method4(String message) {  //Return type: String  Name: method4  Parameters: String message
 		return message;
 	}
 	
-	public static void method5(String message, int num) {
+	public static void method5(String message, int num) {  //Return type: void  Name: method5  Parameters: String message, int num
 		System.out.println(message+num);
 	}
 }
