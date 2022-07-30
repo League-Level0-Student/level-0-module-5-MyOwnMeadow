@@ -17,7 +17,10 @@ public class Calculator {
 		
 		// 4) Call the result() method and put the answer in a pop-up
 	}
-	
+	static int divide(int int1, int int2) {
+		int resolt = int1/int2;
+		return resolt;
+	}
 	// 1) Make 4 static methods (add, subtract, multiply, divide)
 	//		They should each take 2 numbers as parameters
 	//		and return the answer.

@@ -7,6 +7,8 @@ import org.jointheleague.graphical.robot.Robot;
 public class Robot_BOBERT {
 	public static void main(String[] args) {
 		Robot bobert = new Robot();
+		bobert.penDown();
+		bobert.setSpeed(5);
 		
 		String shapeRequest = JOptionPane.showInputDialog("What shape do you want Bobert to draw?\n"
 				+ "\n"
@@ -39,6 +41,16 @@ public class Robot_BOBERT {
 		else {
 			JOptionPane.showMessageDialog(null, "That is not an option.");
 		}
+		
+		if(shapeRequest.equalsIgnoreCase("square")) {
+			square(bobert);
+		}
+		else if(shapeRequest.equalsIgnoreCase("circle")) {
+			circle(bobert);
+		}
+		else if(shapeRequest.equalsIgnoreCase("triengle")) {
+			triengle(bobert);
+		}
 	}
 	static void square(Robot bobert) {
 		for(int i = 0; i < 4; i += 1) {
@@ -47,9 +59,15 @@ public class Robot_BOBERT {
 		}
 	}
 	static void circle(Robot bobert) {
-		
+		for(int i = 0; i < 360; i += 1) {
+			bobert.move(1);
+			bobert.turn(1);
+		}
 	}
 	static void triengle(Robot bobert) {
-		
+		for(int i = 0; i < 3; i += 1) {
+			bobert.move(50);
+			bobert.turn(120);
+		}
 	}
 }
