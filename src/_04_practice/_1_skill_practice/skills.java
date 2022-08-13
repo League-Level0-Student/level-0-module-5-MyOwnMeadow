@@ -23,10 +23,10 @@ public class skills {
 			skill5();
 		}
 		else {
-			
+			JOptionPane.showMessageDialog(null, "That is not an option.");
 		}
 	}
-	static void skill1() {
+	static void skill1() {	//Done
 		String dimeCntS = JOptionPane.showInputDialog("How meny dimes do you have?\n"
 				+ "[PLEASE ONLY ANCER IN NUMBERS]");
 		int dimeCnt = Integer.parseInt(dimeCntS);
@@ -42,14 +42,14 @@ public class skills {
 			JOptionPane.showMessageDialog(null, "Cool.");
 		}
 	}
-	static void skill2() {
+	static void skill2() {	//Done
 		for(int i = 0; i <= 30; i += 1) {
 			if(i%3 == 0) {
 				System.out.println(i);
 			}
 		}
 	}
-	static void skill3() {	//Add random
+	static void skill3() {	//Done
 		Random ran = new Random();
 		int num1 = ran.nextInt(20);
 		System.out.println(num1);
@@ -58,9 +58,9 @@ public class skills {
 		System.out.println(num2);
 		
 		int theNum = num1 - num2;
-		JOptionPane.showMessageDialog(null, theNum + ".");
+		JOptionPane.showMessageDialog(null, theNum);
 	}
-	static void skill4() {
+	static void skill4() {	//Done
 		String city = JOptionPane.showInputDialog("What city do you live in?");
 		
 		if(city.equalsIgnoreCase("san diego")) {
@@ -87,7 +87,7 @@ public class skills {
 			JOptionPane.showMessageDialog(null, "That's... " + wheelNum + " wheels between them!");
 		}
 	}
-	static void skill5() {
+	static void skill5() {	//Done
 		String school = JOptionPane.showInputDialog("What school do you go to?");
 		JOptionPane.showMessageDialog(null, "I've heard that " + school + " is a prety good school.");
 	}
